@@ -131,7 +131,6 @@ end
 group :test do
   gem 'apivore', git: 'https://github.com/department-of-veterans-affairs/apivore', branch: 'master'
   gem 'awrence'
-  gem 'faker'
   gem 'fakeredis'
   gem 'pdf-inspector'
   gem 'rspec_junit_formatter'
@@ -146,6 +145,7 @@ group :test do
 end
 
 group :development, :test do
+  gem 'faker'
   gem 'awesome_print', '~> 1.8' # Pretty print your Ruby objects in full color and with proper indentation
   gem 'brakeman', '~> 4.7'
   gem 'bundler-audit'
