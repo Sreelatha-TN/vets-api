@@ -144,6 +144,7 @@ group :test do
   gem 'webrick'
 end
 
+# rubocop:disable Metrics/BlockLength
 group :development, :test do
   gem 'awesome_print', '~> 1.8' # Pretty print your Ruby objects in full color and with proper indentation
   gem 'brakeman', '~> 4.7'
@@ -174,6 +175,7 @@ group :development, :test do
   gem 'webmock'
   gem 'yard'
 end
+# rubocop:enable Metrics/BlockLength
 
 # sidekiq enterprise requires a license key to download. In many cases, basic sidekiq is enough for local development
 if (Bundler::Settings.new(Bundler.app_config_path)['enterprise.contribsys.com'].nil? ||
